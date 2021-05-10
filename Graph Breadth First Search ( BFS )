@@ -1,0 +1,12 @@
+Graph is basically a type of Tree and the BFS of graph is similar to level order traversal of tree, the only difference is, it may contain cycles.
+To deal with this problem we use an boolean array to flag which vertex is visited and which is to visited.
+(One can implement it using Java, C, C++, Python etc.) ( Implementation using Java is so much fun)
+Below is the BFS Algorithm:
+1. Initiate visitedElement  boolean array of size equals the number of vertices
+2. Create a Queue for BFS(Traversing).
+3. Mark current Node (starting node) as visited and enqueue it.
+4. Iterate until the queue is not empty ( eg. while( !( queue.isEmpty() ) ) )
+5. Dequeue a vertex from Queue and print to console (or add to a resulting array or list.)
+6. Find its adjacent vertex and add it to Queue if they are not visited.
+7. Goto Step 4.
+8. End.
